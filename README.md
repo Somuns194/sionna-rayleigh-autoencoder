@@ -35,7 +35,6 @@ On Windows, `torch.compile` is disabled in the code for compatibility.
 
 ## Quick Start
 
-```bash
 git clone https://github.com/yourname/rayleigh-autoencoder.git
 cd rayleigh-autoencoder
 
