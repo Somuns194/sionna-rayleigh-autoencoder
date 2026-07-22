@@ -65,8 +65,22 @@ Trained weights are saved in weights/. Results are stored in rayleigh_results.pk
 ├── rayleigh_results.png # BLER curves for 3 scenarios
 ├── rayleigh_constellations.png # Learned constellations
 ├── training_log.txt # Training logs
-```
 ├── eval_log.txt # Evaluation logs per SNR
 ├── 瑞利衰落自编码器项目报告.md # Full technical report (Chinese)
 ├── .gitignore # Ignore cache and temporary files
 └── LICENSE # Open-source license
+```
+## Citation
+If you use this code or experimental design, please cite:
+```
+bibtex
+@misc{rayleigh-autoencoder2026,
+  author = {Your Name},
+  title = {End-to-End Autoencoder over Rayleigh Fading with CSI Uncertainty},
+  year = {2026},
+  howpublished = {\url{https://github.com/yourname/rayleigh-autoencoder}}
+}
+```
+## License
+MIT License
+
