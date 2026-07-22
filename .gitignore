@@ -1,0 +1,26 @@
+# Python缓存文件
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+*.swp
+*.swo
+
+# 虚拟环境
+venv/
+env/
+.venv/
+
+# IDE配置
+.idea/
+.vscode/
+*.code-workspace
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 临时大文件（可选，不想上传pkl/图片就取消注释）
+# *.pkl
+# *.png
