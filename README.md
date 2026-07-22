@@ -34,7 +34,7 @@ Full analysis is in the [project report](./瑞利衰落自编码器项目报告.
 On Windows, `torch.compile` is disabled in the code for compatibility.
 
 ## Quick Start
-
+```console
 git clone https://github.com/yourname/rayleigh-autoencoder.git
 cd rayleigh-autoencoder
 
@@ -53,6 +53,9 @@ python rayleigh_autoencoder.py eval
 # Run the full pipeline: smoke → train → eval
 python rayleigh_autoencoder.py all
 Trained weights are saved in weights/. Results are stored in rayleigh_results.pkl; figures are saved as rayleigh_results.png and rayleigh_constellations.png.
+```
+
+
 
 ## Project Structure
 .
