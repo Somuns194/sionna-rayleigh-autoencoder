@@ -1,0 +1,34 @@
+W0715 21:53:29.752000 17056 site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+Device: cuda:0
+
+============================================================
+TRAINING ALL MODELS
+============================================================
+
+[1/5] Training BCE autoencoder on AWGN...
+  [BCE-AWGN] Iter 0/5000  BCE: 0.6898  [BCE-AWGN] Iter 500/5000  BCE: 0.2933  [BCE-AWGN] Iter 1000/5000  BCE: 0.2925  [BCE-AWGN] Iter 1500/5000  BCE: 0.2821  [BCE-AWGN] Iter 2000/5000  BCE: 0.2870  [BCE-AWGN] Iter 2500/5000  BCE: 0.2872  [BCE-AWGN] Iter 3000/5000  BCE: 0.2872  [BCE-AWGN] Iter 3500/5000  BCE: 0.2855  [BCE-AWGN] Iter 4000/5000  BCE: 0.2924  [BCE-AWGN] Iter 4500/5000  BCE: 0.2811
+  Done in 18s
+
+[2/5] Training RL autoencoder on AWGN...
+  [RL-AWGN] Alt Iter 0/3500  RX BCE: 0.6453  [RL-AWGN] Alt Iter 500/3500  RX BCE: 0.2882  [RL-AWGN] Alt Iter 1000/3500  RX BCE: 0.2949  [RL-AWGN] Alt Iter 1500/3500  RX BCE: 0.2881  [RL-AWGN] Alt Iter 2000/3500  RX BCE: 0.2857  [RL-AWGN] Alt Iter 2500/3500  RX BCE: 0.2871  [RL-AWGN] Alt Iter 3000/3500  RX BCE: 0.2795
+  [RL-AWGN] Receiver fine-tuning...
+  [RL-AWGN] FT Iter 0/1500  BCE: 0.2908  [RL-AWGN] FT Iter 500/1500  BCE: 0.2871  [RL-AWGN] FT Iter 1000/1500  BCE: 0.2853
+  Done in 126s
+
+[3/5] Training BCE autoencoder on Rayleigh + Perfect CSI...
+  [BCE-Ray-Perfect] Iter 0/5000  BCE: 0.6925  [BCE-Ray-Perfect] Iter 500/5000  BCE: 0.0945  [BCE-Ray-Perfect] Iter 1000/5000  BCE: 0.1042  [BCE-Ray-Perfect] Iter 1500/5000  BCE: 0.0846  [BCE-Ray-Perfect] Iter 2000/5000  BCE: 0.0802  [BCE-Ray-Perfect] Iter 2500/5000  BCE: 0.1015  [BCE-Ray-Perfect] Iter 3000/5000  BCE: 0.1138  [BCE-Ray-Perfect] Iter 3500/5000  BCE: 0.1031  [BCE-Ray-Perfect] Iter 4000/5000  BCE: 0.0988  [BCE-Ray-Perfect] Iter 4500/5000  BCE: 0.0803
+  Done in 23s
+
+[4/5] Training RL autoencoder on Rayleigh + Perfect CSI...
+  [RL-Ray-Perfect] Alt Iter 0/3500  RX BCE: 0.6395  [RL-Ray-Perfect] Alt Iter 500/3500  RX BCE: 0.0860  [RL-Ray-Perfect] Alt Iter 1000/3500  RX BCE: 0.0969  [RL-Ray-Perfect] Alt Iter 1500/3500  RX BCE: 0.0857  [RL-Ray-Perfect] Alt Iter 2000/3500  RX BCE: 0.0930  [RL-Ray-Perfect] Alt Iter 2500/3500  RX BCE: 0.1087  [RL-Ray-Perfect] Alt Iter 3000/3500  RX BCE: 0.1042
+  [RL-Ray-Perfect] Receiver fine-tuning...
+  [RL-Ray-Perfect] FT Iter 0/1500  BCE: 0.1105  [RL-Ray-Perfect] FT Iter 500/1500  BCE: 0.0857  [RL-Ray-Perfect] FT Iter 1000/1500  BCE: 0.0926
+  Done in 157s
+
+[5/5] Training RL autoencoder on Rayleigh + Imperfect CSI...
+  [RL-Ray-Imperfect] Alt Iter 0/3500  RX BCE: 0.6483  [RL-Ray-Imperfect] Alt Iter 500/3500  RX BCE: 0.3554  [RL-Ray-Imperfect] Alt Iter 1000/3500  RX BCE: 0.3632  [RL-Ray-Imperfect] Alt Iter 1500/3500  RX BCE: 0.3342  [RL-Ray-Imperfect] Alt Iter 2000/3500  RX BCE: 0.3246  [RL-Ray-Imperfect] Alt Iter 2500/3500  RX BCE: 0.3327  [RL-Ray-Imperfect] Alt Iter 3000/3500  RX BCE: 0.3334
+  [RL-Ray-Imperfect] Receiver fine-tuning...
+  [RL-Ray-Imperfect] FT Iter 0/1500  BCE: 0.3804  [RL-Ray-Imperfect] FT Iter 500/1500  BCE: 0.3584  [RL-Ray-Imperfect] FT Iter 1000/1500  BCE: 0.3236
+  Done in 155s
+
+All models trained!
