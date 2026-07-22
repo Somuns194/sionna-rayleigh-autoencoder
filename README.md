@@ -55,38 +55,15 @@ python rayleigh_autoencoder.py eval
 python rayleigh_autoencoder.py all
 Trained weights are saved in weights/. Results are stored in rayleigh_results.pkl; figures are saved as rayleigh_results.png and rayleigh_constellations.png.
 
-Project Structure
-text
+## Project Structure
 .
-├── rayleigh_autoencoder.py      # Main script (train/eval/plot)
-├── weights/                     # 5 trained model weights (.pt)
-├── rayleigh_results.pkl         # All BLER simulation data
-├── rayleigh_results.png         # BLER curves for 3 scenarios
-├── rayleigh_constellations.png  # Learned constellations
-├── training_log.txt             # Training logs
-├── eval_log.txt                 # Evaluation logs per SNR
-├── 瑞利衰落自编码器项目报告.md  # Full technical report (Chinese)
-├── .gitignore                   # Ignore cache and temporary files
-└── LICENSE                      # Open-source license
-Configuration
-Parameter	Value
-Codeword / info bits	1500 / 750
-Modulation	64‑QAM (6 bit/sym)
-LDPC	5G standard, rate 0.5
-Training SNR (AWGN)	4.0 – 8.0 dB
-Training SNR (Rayleigh)	10.0 – 25.0 dB
-CSI error variance	0.1 (NMSE = -10 dB)
-RL exploration variance	0.01
-Iterations	BCE: 5000; RL: 3500 alternating + 1500 fine‑tune
-Citation
-If you use this code or experimental design, please cite:
-
-bibtex
-@misc{rayleigh-autoencoder2026,
-  author = {Your Name},
-  title = {End-to-End Autoencoder over Rayleigh Fading with CSI Uncertainty},
-  year = {2026},
-  howpublished = {\url{https://github.com/yourname/rayleigh-autoencoder}}
-}
-License
-MIT License
+├── rayleigh_autoencoder.py # Main script (train/eval/plot)
+├── weights/ # 5 trained model weights (.pt)
+├── rayleigh_results.pkl # All BLER simulation data
+├── rayleigh_results.png # BLER curves for 3 scenarios
+├── rayleigh_constellations.png # Learned constellations
+├── training_log.txt # Training logs
+├── eval_log.txt # Evaluation logs per SNR
+├── 瑞利衰落自编码器项目报告.md # Full technical report (Chinese)
+├── .gitignore # Ignore cache and temporary files
+└── LICENSE # Open-source license
