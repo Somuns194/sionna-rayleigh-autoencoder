@@ -58,13 +58,14 @@ Trained weights are saved in weights/. Results are stored in rayleigh_results.pk
 
 
 ## Project Structure
-.
+```
 ├── rayleigh_autoencoder.py # Main script (train/eval/plot)
 ├── weights/ # 5 trained model weights (.pt)
 ├── rayleigh_results.pkl # All BLER simulation data
 ├── rayleigh_results.png # BLER curves for 3 scenarios
 ├── rayleigh_constellations.png # Learned constellations
 ├── training_log.txt # Training logs
+```
 ├── eval_log.txt # Evaluation logs per SNR
 ├── 瑞利衰落自编码器项目报告.md # Full technical report (Chinese)
 ├── .gitignore # Ignore cache and temporary files
